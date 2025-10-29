@@ -18,6 +18,8 @@ The CIRCULOOS Data platform will be used as a database for all data related to t
 
 ### 2.1 Component Integration Map
 
+![CIRCULOOS Platform Architecture](./CIRCULOOS_integration.png)
+
 
 ## 3 Integration Strategy
 
@@ -38,10 +40,10 @@ The CIRCULOOS Data platform will be used as a database for all data related to t
 - CV-based Composition Detection (CVTOOL)
 
 
-#### Phase 3: Intra-Business Components 
+#### Phase 3: Intra-Business Components
 - Manufacturing Process Orchestration (MPMS) <-> AI-driven Optimization (SCOPT)
-- ?Manufacturing Process Orchestration (MPMS) <-> Sustainability & Lifecycle Assessment Tool (GRETA)
-- ?AI-driven Optimization (SCOPT) <-> Sustainability & Lifecycle Assessment Tool (GRETA)
+- Manufacturing Process Orchestration (MPMS) <-> Sustainability & Lifecycle Assessment Tool (GRETA) ?
+- AI-driven Optimization (SCOPT) <-> Sustainability & Lifecycle Assessment Tool (GRETA) ?
 
 #### Phase 4: End-to-End Integration 
 - Complete workflow testing
@@ -50,7 +52,7 @@ The CIRCULOOS Data platform will be used as a database for all data related to t
 
 ### 3.2 Integration with CIRCULOOS data platform
 
-Prior to any interaction with the CIRCULOOS data platform each component needs to get the a BEARER token from the CIRCULOOS Keycload.
+Prior to any interaction with the CIRCULOOS data platform each component needs to get a BEARER token from the CIRCULOOS Keycloak.
 Detailed examples can be found in https://github.com/european-dynamics-rnd/circuloos-data-platform/tree/master/commands_URL
 
 |Component                                  |ShortName|
@@ -64,12 +66,12 @@ Detailed examples can be found in https://github.com/european-dynamics-rnd/circu
 
 
 - NGSI-LD Tenant: circuloos_integration
-- Each component replace the COMPONENT with their short name
-- Replace timestamp with the current when the the test is done
+- Each component should replace COMPONENT with their short name
+- Replace timestamp with the current timestamp when the test is done
 
 #### 3.2.1 Reading from the CIRCULOOS data platform
-Each component needs to read for the CIRCULOOS data platform the following entity: urn:ngsi-ld:COMPONENT:reading-integration-test-1
-Inside the entity there is a random alphanumeric per component. The alphanumeric will be used on the next step. Save the data received from the data platform as ```reading.json```
+Each component needs to read from the CIRCULOOS data platform the following entity: urn:ngsi-ld:COMPONENT:reading-integration-test-1
+Inside the entity there is a random alphanumeric value for each component. The alphanumeric value will be used in the next step. Save the data received from the data platform as ```reading.json```
 
 ```json 
 {
@@ -105,7 +107,8 @@ Each component needs to send/POST the following entity on the data platform to v
         "type": "Property",
         "value": "chrome",
         "observedAt": "2024-08-02T09:26:35Z"
-    },  "magic-number":
+    },
+    "magic-number":
     {
       "type": "Property",
       "value": "P5gADFDLM"
@@ -116,12 +119,89 @@ Each component needs to send/POST the following entity on the data platform to v
 Each component needs to read the historical (Mintaka) data from the platform. The id that you need to request is: ```urn:ngsi-ld:COMPONENT:writing-integration-test-1```. Save the response in a file called ```historical-data.json```
 
 
-Create a file named writing.json with the data to be send to the data platform and place it on your corresponding folder under verification. Next generate a pull request from both reading.json, writing.json and historical-data.json files.
+Create a file named writing.json with the data to be sent to the data platform and place it on your corresponding folder under verification. Next generate a pull request from both reading.json, writing.json and historical-data.json files.
 
+## 4. Testing Strategy
 
+(To be completed)
 
+## 5. Performance and Security
 
-# 6.3.2 Issue Tracking Template
+(To be completed)
+
+## 6. Issue Tracking and Resolution
+
+### 6.1 Issue Management Process
+
+All integration issues will be tracked using GitHub Issues in the project repository. The workflow follows these steps:
+
+#### 6.1.1 Issue Creation
+1. **Identify the Issue**: During integration testing, when an issue is discovered, create a new GitHub Issue immediately
+2. **Use Labels**: Apply appropriate labels:
+   - `integration` - For all integration-related issues
+   - `bug` - For defects or errors
+   - `enhancement` - For improvement requests
+   - `documentation` - For documentation issues
+   - `critical` / `high` / `medium` / `low` - For priority levels
+   - Component labels: `MPMS`, `RAMP`, `SCDT`, `SCOPT`, `GRETA`, `CVTOOL`, `data-platform`
+3. **Assign Responsibility**: Assign to the partner responsible for the affected component
+4. **Set Milestone**: Link to the appropriate project phase milestone
+
+#### 6.1.2 Issue Tracking Workflow
+1. **Open** - Issue created and awaiting triage
+2. **In Progress** - Partner is actively working on the issue
+3. **Testing** - Fix implemented and ready for verification
+4. **Closed** - Issue resolved and verified
+
+#### 6.1.3 Communication Protocol
+- All technical discussion happens in GitHub Issue comments
+- Tag relevant partners using `@username` mentions
+- For urgent issues, notify via project communication channels (email/Slack) with GitHub Issue link
+- Update issue status within 2 business days of assignment
+- All partners must monitor issues labeled with their component name
+
+### 6.2 Escalation Procedures
+
+#### 6.2.1 Escalation Levels
+
+**Level 1: Component Level** (Days 1-3)
+- Issue assigned to component owner partner
+- Technical team investigates and resolves
+- Expected resolution: 3 business days
+
+**Level 2: Technical Coordination** (Days 4-7)
+- If unresolved after 3 days, escalate to technical coordinator (ED)
+- Multi-partner coordination meeting scheduled if needed
+- Expected resolution: 7 business days total
+
+**Level 3: Project Management** (Days 8+)
+- If unresolved after 7 days or if it impacts project deliverables
+- Escalate to Project Management Team
+- Impact assessment on project timeline and deliverables
+- Risk mitigation plan created
+
+#### 6.2.2 Critical Issue Fast-Track
+For **critical** issues (system down, data loss, security breach):
+- Immediate notification to all partners via email and project channels
+- Label with `critical` tag
+- Technical coordinator involved from start
+- Daily status updates required
+- Expected resolution: 24-48 hours
+
+#### 6.2.3 Cross-Component Issues
+When issues involve multiple components:
+1. Create a parent issue with all affected component labels
+2. Create linked child issues for each component if needed
+3. Technical coordinator facilitates resolution meeting
+4. Document dependencies and integration points in issue description
+
+### 6.3 Templates and Documentation
+
+#### 6.3.1 Test Case Template
+
+(To be completed)
+
+#### 6.3.2 Issue Tracking Template
 ```markdown
 ## Issue Details
 - **Issue ID**: INT-XXX
