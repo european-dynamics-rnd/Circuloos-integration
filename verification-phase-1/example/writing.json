@@ -1,0 +1,24 @@
+[{
+    "id": "urn:ngsi-ld:COMPONENT:writing-integration-test-1",
+    "type": "integration",
+    "leather_type": {
+        "type": "Property",
+        "value": "animal",
+        "observedAt": "2028-10-29T14:26:35Z"
+    },
+    "kind_of_animal": {
+        "type": "Property",
+        "value": "pig",
+        "observedAt": "2028-10-29T14:26:35Z"
+    },
+    "leather_type_tanned": {
+        "type": "Property",
+        "value": "chrome",
+        "observedAt": "2028-10-29T14:26:35Z"
+    },
+    "magic-number":
+    {
+      "type": "Property",
+      "value": "A7FFAL1AU"
+    }
+}]
