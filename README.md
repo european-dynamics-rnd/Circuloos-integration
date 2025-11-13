@@ -3,7 +3,7 @@
 ## 1. Executive Summary
 
 This document outlines the Integration and Integration Testing strategy for CIRCULOOS:
-- CIRCULOOS Data platform ( Orion-LD Context Broker, Mintaka time-series storage, Keycloak authentication) - ED
+- CIRCULOOS Data platform (CDP) ( Orion-LD Context Broker, Mintaka time-series storage, Keycloak authentication) - ED
 - Manufacturing Process Orchestration (MPMS) - ED
 - Stakeholder Engagement and Collaboration (RAMP)  - ED
 - 3D Digital Twin (SCDT) - CUT
@@ -25,7 +25,8 @@ The CIRCULOOS Data platform will be used as a database for all data related to t
 
 ### 3.1 Phased Integration Approach
 
-#### Phase 1: Business Components with core Infrastructure
+#### Phase 1: Business Components with core Infrastructure (CIRCULOOS data platform)
+
 - Manufacturing Process Orchestration (MPMS)
 - Stakeholder Engagement and Collaboration (RAMP)
 - 3D Digital Twin (SCDT)
@@ -34,16 +35,17 @@ The CIRCULOOS Data platform will be used as a database for all data related to t
 - CV-based Composition Detection (CVTOOL)
 
 #### Phase 2: Intra-Business Components
-- Manufacturing Process Orchestration (MPMS) <-> AI-driven Optimization (SCOPT)
-- Manufacturing Process Orchestration (MPMS) <-> Sustainability & Lifecycle Assessment Tool (GRETA) ?
-- AI-driven Optimization (SCOPT) <-> Sustainability & Lifecycle Assessment Tool (GRETA) ?
+Circular Supply chain testing
+- SCOPT <-> CDP <-> GRETA
+- MPMS <-> CDP <-> SCOPT
+- CVTOOL <-> CDP <-> MPMS
 
 #### Phase 3: End-to-End Integration 
 - Complete workflow testing
 - Performance optimization
 - Security hardening
 
-### 3.2 Integration with CIRCULOOS data platform
+### 3.2 Integration Phase 1 with CIRCULOOS data platform
 
 Prior to any interaction with the CIRCULOOS data platform each component needs to get a BEARER token from the CIRCULOOS Keycloak.
 Detailed examples can be found in https://github.com/european-dynamics-rnd/circuloos-data-platform/tree/master/commands_URL
@@ -109,6 +111,7 @@ Each component needs to send/POST the following entity on the data platform to v
 }
 ```
 #### 3.2.3 Reading historical data from the CIRCULOOS data platform
+
 Each component needs to read the historical (Mintaka) data from the platform. The id that you need to request is: ```urn:ngsi-ld:COMPONENT:writing-integration-test-1```. Save the response in a file called ```historical-data.json```
 
 Create a file named writing.json with the data to be sent to the data platform and place it on your corresponding folder under verification-phase-1 folder. Next generate a pull request from both reading.json, writing.json and historical-data.json files.
