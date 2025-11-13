@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram name="Page-1" id="Es02p8DRjkub2hjDWlHL">
-        <mxGraphModel dx="1094" dy="2067" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="1614" dy="2084" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -46,13 +46,10 @@
                 <mxCell id="66" style="edgeStyle=none;html=1;" parent="1" source="54" target="geomr1CJVptTWvtlSGP4-83" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="67" style="edgeStyle=none;html=1;startArrow=classic;startFill=1;" parent="1" source="54" target="56" edge="1">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
                 <mxCell id="54" value="&lt;h2 data-ved=&quot;2ahUKEwiqjumD2MqCAxUdgf0HHfErBAQQ3B0oAXoECFwQEQ&quot; data-attrid=&quot;title&quot; data-local-attribute=&quot;d3bn&quot; class=&quot;qrShPb pXs6bb PZPZlf q8U8x aTI8gc&quot; style=&quot;font-size: 13px;&quot;&gt;Supply Chain Optimization (SCOPT Tool)&lt;/h2&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=0;fontSize=13;" parent="1" vertex="1">
                     <mxGeometry x="840" y="430" width="130" height="70" as="geometry"/>
                 </mxCell>
-                <mxCell id="61" style="edgeStyle=none;html=1;startArrow=classic;startFill=1;endArrow=classic;endFill=1;" parent="1" source="55" target="geomr1CJVptTWvtlSGP4-83" edge="1">
+                <mxCell id="61" style="edgeStyle=none;html=1;startArrow=none;startFill=0;endArrow=classic;endFill=1;" parent="1" source="55" target="geomr1CJVptTWvtlSGP4-83" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="62" style="edgeStyle=none;html=1;" parent="1" source="55" target="geomr1CJVptTWvtlSGP4-80" edge="1">
@@ -64,7 +61,7 @@
                 <mxCell id="63" style="edgeStyle=none;html=1;" parent="1" source="56" target="geomr1CJVptTWvtlSGP4-80" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="64" style="edgeStyle=none;html=1;startArrow=classic;startFill=1;" parent="1" source="56" target="geomr1CJVptTWvtlSGP4-83" edge="1">
+                <mxCell id="64" style="edgeStyle=none;html=1;startArrow=none;startFill=0;" parent="1" source="56" target="geomr1CJVptTWvtlSGP4-83" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="56" value="&lt;h2 style=&quot;font-size: 13px;&quot; data-ved=&quot;2ahUKEwiqjumD2MqCAxUdgf0HHfErBAQQ3B0oAXoECFwQEQ&quot; data-attrid=&quot;title&quot; data-local-attribute=&quot;d3bn&quot; class=&quot;qrShPb pXs6bb PZPZlf q8U8x aTI8gc&quot;&gt;Manufacturing Process Orchestration (MPMS Tool)&lt;/h2&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=13;fontStyle=0" parent="1" vertex="1">
@@ -79,7 +76,7 @@
                 <mxCell id="60" style="edgeStyle=none;html=1;" parent="1" source="58" target="geomr1CJVptTWvtlSGP4-80" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="71" style="edgeStyle=none;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="58" target="geomr1CJVptTWvtlSGP4-83">
+                <mxCell id="71" style="edgeStyle=none;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="58" target="geomr1CJVptTWvtlSGP4-83" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="58" value="&lt;h2 data-ved=&quot;2ahUKEwiqjumD2MqCAxUdgf0HHfErBAQQ3B0oAXoECFwQEQ&quot; data-attrid=&quot;title&quot; data-local-attribute=&quot;d3bn&quot; class=&quot;qrShPb pXs6bb PZPZlf q8U8x aTI8gc&quot; style=&quot;font-size: 13px;&quot;&gt;&lt;span style=&quot;color: rgb(63, 63, 63); background-color: transparent;&quot;&gt;Sustainability and Lifecycle Assessment (&lt;/span&gt;GRETA)&lt;/h2&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=0;fontSize=13;" parent="1" vertex="1">
@@ -92,9 +89,6 @@
                     <mxGeometry x="540" y="170" width="120" height="50" as="geometry"/>
                 </mxCell>
                 <mxCell id="geomr1CJVptTWvtlSGP4-82" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.25;entryY=1;entryDx=0;entryDy=0;startArrow=classic;startFill=1;" parent="1" source="geomr1CJVptTWvtlSGP4-83" target="geomr1CJVptTWvtlSGP4-73" edge="1">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="73" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.163;entryY=0.95;entryDx=0;entryDy=0;entryPerimeter=0;startArrow=classic;startFill=1;" edge="1" parent="1" source="54" target="58">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
             </root>
