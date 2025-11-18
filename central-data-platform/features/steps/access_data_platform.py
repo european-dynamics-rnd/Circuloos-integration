@@ -127,7 +127,7 @@ def step_validate_version_info(context):
     logging.debug(f"Release Date: {response_json['release_date']}")
 
 
-@when("I post a new entity to Orion-LD with the following data")
+@when("I post a new entity to Orion-LD with the following data:")
 def step_post_entity_to_orion(context):
     # Ensure the access token is available
     assert hasattr(context, "access_token"), "Access token not found in context."
