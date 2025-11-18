@@ -26,13 +26,12 @@ jobs:
         pip install behave requests
     
     - name: Run Behave integration tests
-      env:
-        HOST: ${{ secrets.CIRCULOOS_HOST }}
-        PARTNER_USERNAME: ${{ secrets.PARTNER_USERNAME }}
-        PARTNER_PASSWORD: ${{ secrets.PARTNER_PASSWORD }}
-        ORION_PEP_SECRET: ${{ secrets.ORION_PEP_SECRET }}
-        MIKTAKA_PEP_SECRET: ${{ secrets.MIKTAKA_PEP_SECRET }}
       run: |
+        export HOST="${{ secrets.CIRCULOOS_HOST }}"
+        export PARTNER_USERNAME="${{ secrets.PARTNER_USERNAME }}"
+        export PARTNER_PASSWORD="${{ secrets.PARTNER_PASSWORD }}"
+        export ORION_PEP_SECRET="${{ secrets.ORION_PEP_SECRET }}"
+        export MIKTAKA_PEP_SECRET="${{ secrets.MIKTAKA_PEP_SECRET }}"
         cd central-data-platform
         behave --junit --junit-directory=test-results --no-capture --no-capture-stderr --format=pretty
       continue-on-error: false
