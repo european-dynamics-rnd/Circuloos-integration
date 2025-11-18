@@ -38,12 +38,12 @@ jobs:
     - name: Run Behave integration tests
       run: |
         cd central-data-platform
-        behave --junit --junit-directory=test-results
+        behave --junit --junit-directory=test-results --no-capture --no-capture-stderr --format=pretty
       continue-on-error: false
     
     - name: Upload test results
       if: always()
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: test-results
         path: central-data-platform/test-results/
