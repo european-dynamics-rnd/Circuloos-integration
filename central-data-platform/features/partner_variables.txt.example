@@ -1,0 +1,6 @@
+HOST=circuloos-platform.eurodyn.com
+
+PARTNER_USERNAME=your-username
+PARTNER_PASSWORD=your-password
+ORION_PEP_SECRET=your-orion-secret
+MIKTAKA_PEP_SECRET=your-miktaka-secret
