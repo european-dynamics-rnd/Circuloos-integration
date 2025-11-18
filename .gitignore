@@ -1,1 +1,8 @@
-central-data-platform/features/__pycache__/environment.cpython-311.pyc
+# Python cache
+central-data-platform/features/__pycache__/
+__pycache__/
+*.pyc
+*.pyo
+
+# # Sensitive configuration files
+# central-data-platform/features/partner_variables.txt
