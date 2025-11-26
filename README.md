@@ -128,7 +128,7 @@ You can utilize  [addDataOrionViaKong.sh](https://github.com/european-dynamics-r
 
 Each component needs to read the historical (Mintaka) data from the platform. The id that you need to request is: ```urn:ngsi-ld:COMPONENT:writing-integration-test-1```. Save the response in a file called ```historical-data.json```
 
-Create a file named writing.json with the data to be sent to the data platform and place it on your corresponding folder under verification-phase-1 folder. Next generate a pull request from both reading.json, writing.json and historical-data.json files.Please use your ShortName as the name of your branch.
+Create a file named writing.json with the data to be sent to the data platform and place it on your corresponding folder under verification-phase-1 folder. Next generate a pull request from both reading.json, writing.json and historical-data.json files.Please use your ShortName as the name of your branch. An tutorial from the internet to create a [pull request](https://opensource.com/article/19/7/create-pull-request-github).
 
 See also under the folder verification-phase-1/example for an example. 
 
