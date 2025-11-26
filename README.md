@@ -128,7 +128,17 @@ See also under the folder verification-phase-1/example for an example.
 
 #### 3.2.4 Postman
 
-Also there is a [Postman collection](./verification-phase-1/example/ED%20CIRCULOOS%20Platform%20Integration%20Testing.postman_collection.json). See the variables to change the username and password
+Also there is a [Postman collection](./verification-phase-1/example/ED%20CIRCULOOS%20Platform%20Integration%20Testing.postman_collection.json). See the variables to change the PARTNER_USERNAME and PARTNER_PASSWORD
+
+## 3.3 Open calls
+
+All the open calls will need to be able to read/write to the data platform. You will need to change the COMPONENT part of the ID with with your PARTNER_USERNAME.
+
+So if your PARTNER_USERNAME is circuloos-european_dynamics, the ID that you need to read is:  
+```urn:ngsi-ld:circuloos-european_dynamics:reading-integration-test-1```
+
+You will not need to upload anything to the GitHub, but you will need to include relevant screenshot to your specific deliverable. Please remember to remove/hide your PARTNER_PASSWORD from any screenshot.
+
 
 ## 4. Issue Tracking and Resolution
 
