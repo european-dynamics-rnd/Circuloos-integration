@@ -1,0 +1,418 @@
+{
+    "id": "urn:ngsi-ld:GRETA:writing-integration-test-1",
+    "type": "environmental_footprint_indicator",
+    "https://github.com/isteps-sps-lab/CIRCULOOS_Data_model/tree/main/sustainabilityIndicatorsschema.json#ecotoxicityFreshwaterOrganicsCTUe": [
+        {
+            "type": "Property",
+            "value": "321.09",
+            "observedAt": "2025-11-27T09:00:00Z",
+            "instanceId": "urn:ngsi-ld:attribute:instance:8536a0c4-cb67-11f0-9e3b-0242ac16000b",
+            "unitCode": "CTUe"
+        },
+        {
+            "type": "Property",
+            "value": "321.09",
+            "observedAt": "2025-11-27T09:00:00Z",
+            "instanceId": "urn:ngsi-ld:attribute:instance:c39c7afa-cb67-11f0-9e3b-0242ac16000b",
+            "unitCode": "CTUe"
+        }
+    ],
+    "https://github.com/isteps-sps-lab/CIRCULOOS_Data_model/tree/main/sustainabilityIndicatorsschema.json#particulateMatterFormationHealth": [
+        {
+            "type": "Property",
+            "value": "432.10",
+            "observedAt": "2025-11-27T09:00:00Z",
+            "instanceId": "urn:ngsi-ld:attribute:instance:8536a966-cb67-11f0-9e3b-0242ac16000b",
+            "unitCode": "kg PM10-Eq"
+        },
+        {
+            "type": "Property",
+            "value": "432.10",
+            "observedAt": "2025-11-27T09:00:00Z",
+            "instanceId": "urn:ngsi-ld:attribute:instance:c39c8270-cb67-11f0-9e3b-0242ac16000b",
+            "unitCode": "kg PM10-Eq"
+        }
+    ],
+    "https://github.com/isteps-sps-lab/CIRCULOOS_Data_model/tree/main/sustainabilityIndicatorsschema.json#eutrophicationTerrestrialAccumExceedance": [
+        {
+            "type": "Property",
+            "value": "765.43",
+            "observedAt": "2025-11-27T09:00:00Z",
+            "instanceId": "urn:ngsi-ld:attribute:instance:8536a3da-cb67-11f0-9e3b-0242ac16000b",
+            "unitCode": "mol N-Eq"
+        },
+        {
+            "type": "Property",
+            "value": "765.43",
+            "observedAt": "2025-11-27T09:00:00Z",
+            "instanceId": "urn:ngsi-ld:attribute:instance:c39c7d02-cb67-11f0-9e3b-0242ac16000b",
+            "unitCode": "mol N-Eq"
+        }
+    ],
+    "magic-number": [
+        {
+            "type": "Property",
+            "value": "L6N3B2X8ZA",
+            "observedAt": "2025-11-27T09:00:00Z",
+            "instanceId": "urn:ngsi-ld:attribute:instance:8536aad8-cb67-11f0-9e3b-0242ac16000b"
+        },
+        {
+            "type": "Property",
+            "value": "L6N3B2X8ZA",
+            "observedAt": "2025-11-27T09:00:00Z",
+            "instanceId": "urn:ngsi-ld:attribute:instance:c39c83e2-cb67-11f0-9e3b-0242ac16000b"
+        }
+    ],
+    "https://github.com/isteps-sps-lab/CIRCULOOS_Data_model/tree/main/sustainabilityIndicatorsschema.json#waterUseUserDeprivationPotential": [
+        {
+            "type": "Property",
+            "value": "543.12",
+            "observedAt": "2025-11-27T09:00:00Z",
+            "instanceId": "urn:ngsi-ld:attribute:instance:8536aa60-cb67-11f0-9e3b-0242ac16000b",
+            "unitCode": "m3 H2O-Eq"
+        },
+        {
+            "type": "Property",
+            "value": "543.12",
+            "observedAt": "2025-11-27T09:00:00Z",
+            "instanceId": "urn:ngsi-ld:attribute:instance:c39c836a-cb67-11f0-9e3b-0242ac16000b",
+            "unitCode": "m3 H2O-Eq"
+        }
+    ],
+    "https://github.com/isteps-sps-lab/CIRCULOOS_Data_model/tree/main/sustainabilityIndicatorsschema.json#humanToxicityCarcinogenicCTUh": [
+        {
+            "type": "Property",
+            "value": "56.78",
+            "observedAt": "2025-11-27T09:00:00Z",
+            "instanceId": "urn:ngsi-ld:attribute:instance:8536a466-cb67-11f0-9e3b-0242ac16000b",
+            "unitCode": "CTUh"
+        },
+        {
+            "type": "Property",
+            "value": "56.78",
+            "observedAt": "2025-11-27T09:00:00Z",
+            "instanceId": "urn:ngsi-ld:attribute:instance:c39c7d7a-cb67-11f0-9e3b-0242ac16000b",
+            "unitCode": "CTUh"
+        }
+    ],
+    "https://github.com/isteps-sps-lab/CIRCULOOS_Data_model/tree/main/sustainabilityIndicatorsschema.json#climateChangeBiogenicGWP100": [
+        {
+            "type": "Property",
+            "value": "98.76",
+            "observedAt": "2025-11-27T09:00:00Z",
+            "instanceId": "urn:ngsi-ld:attribute:instance:85369da4-cb67-11f0-9e3b-0242ac16000b",
+            "unitCode": "XCO2"
+        },
+        {
+            "type": "Property",
+            "value": "98.76",
+            "observedAt": "2025-11-27T09:00:00Z",
+            "instanceId": "urn:ngsi-ld:attribute:instance:c39c7870-cb67-11f0-9e3b-0242ac16000b",
+            "unitCode": "XCO2"
+        }
+    ],
+    "https://github.com/isteps-sps-lab/CIRCULOOS_Data_model/tree/main/sustainabilityIndicatorsschema.json#climateChangeLandUseAndLULUCGWP": [
+        {
+            "type": "Property",
+            "value": "432.1",
+            "observedAt": "2025-11-27T09:00:00Z",
+            "instanceId": "urn:ngsi-ld:attribute:instance:85369eb2-cb67-11f0-9e3b-0242ac16000b",
+            "unitCode": "XCO2"
+        },
+        {
+            "type": "Property",
+            "value": "432.1",
+            "observedAt": "2025-11-27T09:00:00Z",
+            "instanceId": "urn:ngsi-ld:attribute:instance:c39c7974-cb67-11f0-9e3b-0242ac16000b",
+            "unitCode": "XCO2"
+        }
+    ],
+    "https://github.com/isteps-sps-lab/CIRCULOOS_Data_model/tree/main/sustainabilityIndicatorsschema.json#ozoneDepletionPotentialODP": [
+        {
+            "type": "Property",
+            "value": "0.0123",
+            "observedAt": "2025-11-27T09:00:00Z",
+            "instanceId": "urn:ngsi-ld:attribute:instance:8536a8ee-cb67-11f0-9e3b-0242ac16000b",
+            "unitCode": "kg CFC-11-Eq"
+        },
+        {
+            "type": "Property",
+            "value": "0.0123",
+            "observedAt": "2025-11-27T09:00:00Z",
+            "instanceId": "urn:ngsi-ld:attribute:instance:c39c81f8-cb67-11f0-9e3b-0242ac16000b",
+            "unitCode": "kg CFC-11-Eq"
+        }
+    ],
+    "https://github.com/isteps-sps-lab/CIRCULOOS_Data_model/tree/main/sustainabilityIndicatorsschema.json#humanToxicityNonCarcinogenicInorganicsCTU": [
+        {
+            "type": "Property",
+            "value": "65.43",
+            "observedAt": "2025-11-27T09:00:00Z",
+            "instanceId": "urn:ngsi-ld:attribute:instance:8536a66e-cb67-11f0-9e3b-0242ac16000b",
+            "unitCode": "CTUh"
+        },
+        {
+            "type": "Property",
+            "value": "65.43",
+            "observedAt": "2025-11-27T09:00:00Z",
+            "instanceId": "urn:ngsi-ld:attribute:instance:c39c7f78-cb67-11f0-9e3b-0242ac16000b",
+            "unitCode": "CTUh"
+        }
+    ],
+    "https://github.com/isteps-sps-lab/CIRCULOOS_Data_model/tree/main/sustainabilityIndicatorsschema.json#climateChangeFossilGWP100": [
+        {
+            "type": "Property",
+            "value": "567.89",
+            "observedAt": "2025-11-27T09:00:00Z",
+            "instanceId": "urn:ngsi-ld:attribute:instance:85369e3a-cb67-11f0-9e3b-0242ac16000b",
+            "unitCode": "XCO2"
+        },
+        {
+            "type": "Property",
+            "value": "567.89",
+            "observedAt": "2025-11-27T09:00:00Z",
+            "instanceId": "urn:ngsi-ld:attribute:instance:c39c78f2-cb67-11f0-9e3b-0242ac16000b",
+            "unitCode": "XCO2"
+        }
+    ],
+    "https://github.com/isteps-sps-lab/CIRCULOOS_Data_model/tree/main/sustainabilityIndicatorsschema.json#materialResourcesAbioticDepletionElements": [
+        {
+            "type": "Property",
+            "value": "543.21",
+            "observedAt": "2025-11-27T09:00:00Z",
+            "instanceId": "urn:ngsi-ld:attribute:instance:8536a86c-cb67-11f0-9e3b-0242ac16000b",
+            "unitCode": "kg Sb-Eq"
+        },
+        {
+            "type": "Property",
+            "value": "543.21",
+            "observedAt": "2025-11-27T09:00:00Z",
+            "instanceId": "urn:ngsi-ld:attribute:instance:c39c8180-cb67-11f0-9e3b-0242ac16000b",
+            "unitCode": "kg Sb-Eq"
+        }
+    ],
+    "https://github.com/isteps-sps-lab/CIRCULOOS_Data_model/tree/main/sustainabilityIndicatorsschema.json#landUseSoilQualityIndex": [
+        {
+            "type": "Property",
+            "value": "5.43",
+            "observedAt": "2025-11-27T09:00:00Z",
+            "instanceId": "urn:ngsi-ld:attribute:instance:8536a7f4-cb67-11f0-9e3b-0242ac16000b",
+            "unitCode": "M2AQ"
+        },
+        {
+            "type": "Property",
+            "value": "5.43",
+            "observedAt": "2025-11-27T09:00:00Z",
+            "instanceId": "urn:ngsi-ld:attribute:instance:c39c8108-cb67-11f0-9e3b-0242ac16000b",
+            "unitCode": "M2AQ"
+        }
+    ],
+    "https://github.com/isteps-sps-lab/CIRCULOOS_Data_model/tree/main/sustainabilityIndicatorsschema.json#ecotoxicityFreshwaterComparativeToxicCTU": [
+        {
+            "type": "Property",
+            "value": "876.54",
+            "observedAt": "2025-11-27T09:00:00Z",
+            "instanceId": "urn:ngsi-ld:attribute:instance:85369f70-cb67-11f0-9e3b-0242ac16000b",
+            "unitCode": "CTUe"
+        },
+        {
+            "type": "Property",
+            "value": "876.54",
+            "observedAt": "2025-11-27T09:00:00Z",
+            "instanceId": "urn:ngsi-ld:attribute:instance:c39c79ec-cb67-11f0-9e3b-0242ac16000b",
+            "unitCode": "CTUe"
+        }
+    ],
+    "https://github.com/isteps-sps-lab/CIRCULOOS_Data_model/tree/main/sustainabilityIndicators/schema.json#acidificationAccumulatedExceedanceAE": [
+        {
+            "type": "Property",
+            "value": "345.67",
+            "observedAt": "2025-11-27T09:00:00Z",
+            "instanceId": "urn:ngsi-ld:attribute:instance:85369c6e-cb67-11f0-9e3b-0242ac16000b",
+            "unitCode": "XMHQ"
+        },
+        {
+            "type": "Property",
+            "value": "345.67",
+            "observedAt": "2025-11-27T09:00:00Z",
+            "instanceId": "urn:ngsi-ld:attribute:instance:c39c773a-cb67-11f0-9e3b-0242ac16000b",
+            "unitCode": "XMHQ"
+        }
+    ],
+    "https://github.com/isteps-sps-lab/CIRCULOOS_Data_model/tree/main/sustainabilityIndicatorsschema.json#eutrophicationFreshwaterNutrientsP": [
+        {
+            "type": "Property",
+            "value": "0.987",
+            "observedAt": "2025-11-27T09:00:00Z",
+            "instanceId": "urn:ngsi-ld:attribute:instance:8536a254-cb67-11f0-9e3b-0242ac16000b",
+            "unitCode": "kg P-Eq"
+        },
+        {
+            "type": "Property",
+            "value": "0.987",
+            "observedAt": "2025-11-27T09:00:00Z",
+            "instanceId": "urn:ngsi-ld:attribute:instance:c39c7c08-cb67-11f0-9e3b-0242ac16000b",
+            "unitCode": "kg P-Eq"
+        }
+    ],
+    "https://github.com/isteps-sps-lab/CIRCULOOS_Data_model/tree/main/sustainabilityIndicatorsschema.json#ionisingRadiationHumanHealthU235": [
+        {
+            "type": "Property",
+            "value": "76.54",
+            "observedAt": "2025-11-27T09:00:00Z",
+            "instanceId": "urn:ngsi-ld:attribute:instance:8536a75e-cb67-11f0-9e3b-0242ac16000b",
+            "unitCode": "BQU"
+        },
+        {
+            "type": "Property",
+            "value": "76.54",
+            "observedAt": "2025-11-27T09:00:00Z",
+            "instanceId": "urn:ngsi-ld:attribute:instance:c39c8072-cb67-11f0-9e3b-0242ac16000b",
+            "unitCode": "BQU"
+        }
+    ],
+    "https://github.com/isteps-sps-lab/CIRCULOOS_Data_model/tree/main/sustainabilityIndicatorsschema.json#ecotoxicityFreshwaterInorganicsCTUe": [
+        {
+            "type": "Property",
+            "value": "543.21",
+            "observedAt": "2025-11-27T09:00:00Z",
+            "instanceId": "urn:ngsi-ld:attribute:instance:8536a024-cb67-11f0-9e3b-0242ac16000b",
+            "unitCode": "CTUe"
+        },
+        {
+            "type": "Property",
+            "value": "543.21",
+            "observedAt": "2025-11-27T09:00:00Z",
+            "instanceId": "urn:ngsi-ld:attribute:instance:c39c7a78-cb67-11f0-9e3b-0242ac16000b",
+            "unitCode": "CTUe"
+        }
+    ],
+    "https://github.com/isteps-sps-lab/CIRCULOOS_Data_model/tree/main/sustainabilityIndicatorsschema.json#humanToxicityNonCarcinogenicOrganicsCTU": [
+        {
+            "type": "Property",
+            "value": "90.12",
+            "observedAt": "2025-11-27T09:00:00Z",
+            "instanceId": "urn:ngsi-ld:attribute:instance:8536a6e6-cb67-11f0-9e3b-0242ac16000b",
+            "unitCode": "CTUh"
+        },
+        {
+            "type": "Property",
+            "value": "90.12",
+            "observedAt": "2025-11-27T09:00:00Z",
+            "instanceId": "urn:ngsi-ld:attribute:instance:c39c7ffa-cb67-11f0-9e3b-0242ac16000b",
+            "unitCode": "CTUh"
+        }
+    ],
+    "https://github.com/isteps-sps-lab/CIRCULOOS_Data_model/tree/main/sustainabilityIndicatorsschema.json#humanToxicityCarcinogenicInorganicsCTU": [
+        {
+            "type": "Property",
+            "value": "12.34",
+            "observedAt": "2025-11-27T09:00:00Z",
+            "instanceId": "urn:ngsi-ld:attribute:instance:8536a4e8-cb67-11f0-9e3b-0242ac16000b",
+            "unitCode": "CTUh"
+        },
+        {
+            "type": "Property",
+            "value": "12.34",
+            "observedAt": "2025-11-27T09:00:00Z",
+            "instanceId": "urn:ngsi-ld:attribute:instance:c39c7e06-cb67-11f0-9e3b-0242ac16000b",
+            "unitCode": "CTUh"
+        }
+    ],
+    "https://github.com/isteps-sps-lab/CIRCULOOS_Data_model/tree/main/sustainabilityIndicatorsschema.json#photochemicalOxidantFormationHealth": [
+        {
+            "type": "Property",
+            "value": "321.98",
+            "observedAt": "2025-11-27T09:00:00Z",
+            "instanceId": "urn:ngsi-ld:attribute:instance:8536a9de-cb67-11f0-9e3b-0242ac16000b",
+            "unitCode": "kg NMVOC-Eq"
+        },
+        {
+            "type": "Property",
+            "value": "321.98",
+            "observedAt": "2025-11-27T09:00:00Z",
+            "instanceId": "urn:ngsi-ld:attribute:instance:c39c82e8-cb67-11f0-9e3b-0242ac16000b",
+            "unitCode": "kg NMVOC-Eq"
+        }
+    ],
+    "https://github.com/isteps-sps-lab/CIRCULOOS_Data_model/tree/main/sustainabilityIndicatorsschema.json#humanToxicityNonCarcinogenicCTUh": [
+        {
+            "type": "Property",
+            "value": "78.90",
+            "observedAt": "2025-11-27T09:00:00Z",
+            "instanceId": "urn:ngsi-ld:attribute:instance:8536a5ec-cb67-11f0-9e3b-0242ac16000b",
+            "unitCode": "CTUh"
+        },
+        {
+            "type": "Property",
+            "value": "78.90",
+            "observedAt": "2025-11-27T09:00:00Z",
+            "instanceId": "urn:ngsi-ld:attribute:instance:c39c7ef6-cb67-11f0-9e3b-0242ac16000b",
+            "unitCode": "CTUh"
+        }
+    ],
+    "https://github.com/isteps-sps-lab/CIRCULOOS_Data_model/tree/main/sustainabilityIndicatorsschema.json#energyResourcesAbioticDepletionFossils": [
+        {
+            "type": "Property",
+            "value": "987.65",
+            "observedAt": "2025-11-27T09:00:00Z",
+            "instanceId": "urn:ngsi-ld:attribute:instance:8536a182-cb67-11f0-9e3b-0242ac16000b",
+            "unitCode": "MJ"
+        },
+        {
+            "type": "Property",
+            "value": "987.65",
+            "observedAt": "2025-11-27T09:00:00Z",
+            "instanceId": "urn:ngsi-ld:attribute:instance:c39c7b7c-cb67-11f0-9e3b-0242ac16000b",
+            "unitCode": "MJ"
+        }
+    ],
+    "https://github.com/isteps-sps-lab/CIRCULOOS_Data_model/tree/main/sustainabilityIndicatorsschema.json#humanToxicityCarcinogenicOrganicsCTU": [
+        {
+            "type": "Property",
+            "value": "34.56",
+            "observedAt": "2025-11-27T09:00:00Z",
+            "instanceId": "urn:ngsi-ld:attribute:instance:8536a560-cb67-11f0-9e3b-0242ac16000b",
+            "unitCode": "CTUh"
+        },
+        {
+            "type": "Property",
+            "value": "34.56",
+            "observedAt": "2025-11-27T09:00:00Z",
+            "instanceId": "urn:ngsi-ld:attribute:instance:c39c7e7e-cb67-11f0-9e3b-0242ac16000b",
+            "unitCode": "CTUh"
+        }
+    ],
+    "https://github.com/isteps-sps-lab/CIRCULOOS_Data_model/tree/main/sustainabilityIndicatorsschema.json#climateChangeGlobalWarmingPotentialGWP": [
+        {
+            "type": "Property",
+            "value": "1234.56",
+            "observedAt": "2025-11-27T09:00:00Z",
+            "instanceId": "urn:ngsi-ld:attribute:instance:85369d18-cb67-11f0-9e3b-0242ac16000b",
+            "unitCode": "XCO2"
+        },
+        {
+            "type": "Property",
+            "value": "1234.56",
+            "observedAt": "2025-11-27T09:00:00Z",
+            "instanceId": "urn:ngsi-ld:attribute:instance:c39c77ee-cb67-11f0-9e3b-0242ac16000b",
+            "unitCode": "XCO2"
+        }
+    ],
+    "https://github.com/isteps-sps-lab/CIRCULOOS_Data_model/tree/main/sustainabilityIndicatorsschema.json#eutrophicationMarineNutrientsN": [
+        {
+            "type": "Property",
+            "value": "0.123",
+            "observedAt": "2025-11-27T09:00:00Z",
+            "instanceId": "urn:ngsi-ld:attribute:instance:8536a312-cb67-11f0-9e3b-0242ac16000b",
+            "unitCode": "kg N-Eq"
+        },
+        {
+            "type": "Property",
+            "value": "0.123",
+            "observedAt": "2025-11-27T09:00:00Z",
+            "instanceId": "urn:ngsi-ld:attribute:instance:c39c7c80-cb67-11f0-9e3b-0242ac16000b",
+            "unitCode": "kg N-Eq"
+        }
+    ]
+}
