@@ -1,0 +1,14 @@
+{
+  "id": "urn:ngsi-ld:RAMP:writing-integration-test-1",
+  "type": "integration",
+  "magic-number": {
+    "type": "Property",
+    "value": "Z3B8M6T2PW",
+    "observedAt": "2025-12-15T14:50:35Z",
+    "instanceId": "urn:ngsi-ld:attribute:instance:9f9f950a-d9b4-11f0-acde-0242ac16000b"
+  },
+  "@context": [
+    "http://circuloos-ld-context/circuloos-context.jsonld",
+    "http://circuloos-ld-context/ngsi-ld-core-context-v1.7.jsonld"
+  ]
+}

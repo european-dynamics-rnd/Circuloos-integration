@@ -1,0 +1,11 @@
+[{
+  "id": "urn:ngsi-ld:RAMP:writing-integration-test-1",
+  "type": "integration",
+  "magic-number":
+  {
+    "type": "Property",
+    "value": "Z3B8M6T2PW",
+    "observedAt": "2025-12-15T14:50:35Z"
+
+  }
+}]
