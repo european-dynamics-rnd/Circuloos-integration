@@ -1,0 +1,60 @@
+{
+  "id": "urn:ngsi-ld:MPMS:writing-integration-test-1",
+  "type": "integration",
+  "leather_type": [
+    {
+      "type": "Property",
+      "value": "animal",
+      "observedAt": "2025-12-16T12:51:30Z",
+      "instanceId": "urn:ngsi-ld:attribute:instance:82af6490-da7f-11f0-a149-0242ac16000b"
+    },
+    {
+      "type": "Property",
+      "value": "animal",
+      "observedAt": "2025-12-16T12:51:30Z",
+      "instanceId": "urn:ngsi-ld:attribute:instance:899814c6-da81-11f0-9a54-0242ac16000b"
+    }
+  ],
+  "leather_type_tanned": [
+    {
+      "type": "Property",
+      "value": "chrome",
+      "observedAt": "2025-12-16T12:51:30Z",
+      "instanceId": "urn:ngsi-ld:attribute:instance:82af65d0-da7f-11f0-a149-0242ac16000b"
+    },
+    {
+      "type": "Property",
+      "value": "chrome",
+      "observedAt": "2025-12-16T12:51:30Z",
+      "instanceId": "urn:ngsi-ld:attribute:instance:899815f2-da81-11f0-9a54-0242ac16000b"
+    }
+  ],
+  "kind_of_animal": [
+    {
+      "type": "Property",
+      "value": "pig",
+      "observedAt": "2025-12-16T12:51:30Z",
+      "instanceId": "urn:ngsi-ld:attribute:instance:82af654e-da7f-11f0-a149-0242ac16000b"
+    },
+    {
+      "type": "Property",
+      "value": "pig",
+      "observedAt": "2025-12-16T12:51:30Z",
+      "instanceId": "urn:ngsi-ld:attribute:instance:89981570-da81-11f0-9a54-0242ac16000b"
+    }
+  ],
+  "magic-number": [
+    {
+      "type": "Property",
+      "value": "A7F9K2L1QX",
+      "observedAt": "2025-12-16T12:51:30Z",
+      "instanceId": "urn:ngsi-ld:attribute:instance:82af665c-da7f-11f0-a149-0242ac16000b"
+    },
+    {
+      "type": "Property",
+      "value": "A7F9K2L1QX",
+      "observedAt": "2025-12-16T12:51:30Z",
+      "instanceId": "urn:ngsi-ld:attribute:instance:8998167e-da81-11f0-9a54-0242ac16000b"
+    }
+  ]
+}

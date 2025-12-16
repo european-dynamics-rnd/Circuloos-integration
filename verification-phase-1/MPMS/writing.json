@@ -1,0 +1,27 @@
+[
+    {
+        "id": "urn:ngsi-ld:MPMS:writing-integration-test-1",
+        "type": "integration",
+        "leather_type": {
+            "type": "Property",
+            "value": "animal",
+            "observedAt": "2025-12-16T12:51:30Z"
+        },
+        "kind_of_animal": {
+            "type": "Property",
+            "value": "pig",
+            "observedAt": "2025-12-16T12:51:30Z"
+        },
+        "leather_type_tanned": {
+            "type": "Property",
+            "value": "chrome",
+            "observedAt": "2025-12-16T12:51:30Z"
+        },
+        "magic-number":
+        {
+            "type": "Property",
+            "value": "A7F9K2L1QX",
+            "observedAt": "2025-12-16T12:51:30Z"
+        }
+    }
+]
