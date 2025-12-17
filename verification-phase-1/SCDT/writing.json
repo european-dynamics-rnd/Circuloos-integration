@@ -1,0 +1,25 @@
+[{
+    "id": "urn:ngsi-ld:SCDT:writing-integration-test-1",
+    "type": "integration",
+    "leather_type": {
+        "type": "Property",
+        "value": "animal",
+        "observedAt": "2025-12-17T09:26:35Z"
+    },
+    "kind_of_animal": {
+        "type": "Property",
+        "value": "pig",
+        "observedAt": "2025-12-17T09:26:35Z"
+    },
+    "leather_type_tanned": {
+        "type": "Property",
+        "value": "chrome",
+        "observedAt": "2025-12-17T09:26:35Z"
+    },
+    "magic-number":
+    {
+      "type": "Property",
+      "value": "J1C4V8S0UZ",
+      "observedAt": "2025-12-17T09:26:35Z"
+    }
+}]
