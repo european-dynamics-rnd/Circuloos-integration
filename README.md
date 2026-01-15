@@ -61,19 +61,27 @@ Detailed examples can be found in https://github.com/european-dynamics-rnd/circu
 
 
 - NGSI-LD Tenant: circuloos_integration
-- Each component should replace COMPONENT with their short name
+- **⚠️ CRITICAL**: Each component MUST replace `COMPONENT` with their actual ShortName from the table above
 - Replace timestamp with the current timestamp when the test is done
 
 #### 3.2.1 Reading from the CIRCULOOS data platform
-Each component needs to read from the CIRCULOOS data platform the following entity:
 
- ```urn:ngsi-ld:COMPONENT:reading-integration-test-1```
+**⚠️ WARNING: DO NOT use "COMPONENT" or "ORION" in your IDs. You MUST replace it with YOUR component's ShortName (MPMS, RAMP, SCDT, SCOPT, GRETA, or CVTOOL).**
+
+Each component needs to read from the CIRCULOOS data platform the following entity ID pattern:
+
+ ```urn:ngsi-ld:YOUR_SHORTNAME:reading-integration-test-1```
+
+**Examples for each component:**
+- MPMS: `urn:ngsi-ld:MPMS:reading-integration-test-1`
+- RAMP: `urn:ngsi-ld:RAMP:reading-integration-test-1`
 
 Inside the entity there is a random alphanumeric value for each component. The alphanumeric value will be used in the next step. Save the data received from the data platform as ```reading.json```
 
+**Example response (showing MPMS - replace with YOUR component's ShortName):**
 ```json 
 {
-  "id": "urn:ngsi-ld:ORION:reading-integration-test-1",
+  "id": "urn:ngsi-ld:MPMS:reading-integration-test-1",
   "type": "integration",
   "magic-number": {
     "type": "Property",
@@ -81,42 +89,56 @@ Inside the entity there is a random alphanumeric value for each component. The a
   }
 }
 ```
+
 You can utilize the following command [getDataOrionSensorViaKong.sh](https://github.com/european-dynamics-rnd/circuloos-data-platform/blob/master/commands_URL/getDataOrionSensorViaKong.sh) to read/GET the data from the CIRCULOOS Data platform.
 
 Create a file named reading.json with the data received from the data platform and place it on your corresponding folder under verification-phase-1
 
 #### 3.2.2 Providing data to the CIRCULOOS data platform
 
-Each component needs to send/POST the following entity on the data platform to verify their ability to read/write on the platform. The id that you need to request is: 
+**⚠️ WARNING: DO NOT use "COMPONENT" or "ORION" in your IDs. You MUST replace it with YOUR component's ShortName.**
 
-```urn:ngsi-ld:COMPONENT:writing-integration-test-1```.
+Each component needs to send/POST the following entity on the data platform to verify their ability to read/write on the platform. 
 
- Save the json-ld that you will provide to the platform as ```writing.json```. **IMPORTANT** Replace the magic-number with the alphanumeric value received from the previous task and change the observedAt to the current data-time.
+**The ID pattern you need to use:**
+```urn:ngsi-ld:YOUR_SHORTNAME:writing-integration-test-1```
 
+**Examples for each component:**
+- MPMS: `urn:ngsi-ld:MPMS:writing-integration-test-1`
+- RAMP: `urn:ngsi-ld:RAMP:writing-integration-test-1`
+
+Save the json-ld that you will provide to the platform as ```writing.json```. 
+
+**IMPORTANT:** 
+1. Replace `YOUR_SHORTNAME` in the ID with your actual component ShortName
+2. Replace the magic-number with the alphanumeric value received from the previous task
+3. Change the observedAt to the current date-time
+
+**Example JSON (showing MPMS - YOU MUST replace MPMS with YOUR component's ShortName):**
 ```json
 {
-    "id": "urn:ngsi-ld:ORION:writing-integration-test-1",
+    "id": "urn:ngsi-ld:MPMS:writing-integration-test-1",
     "type": "integration",
     "leather_type": {
         "type": "Property",
         "value": "animal",
-        "observedAt": "2025-10-02T09:26:35Z"
+        "observedAt": "2026-01-15T09:26:35Z"
     },
     "kind_of_animal": {
         "type": "Property",
         "value": "pig",
-        "observedAt": "2025-10-02T09:26:35Z"
+        "observedAt": "2026-01-15T09:26:35Z"
     },
     "leather_type_tanned": {
         "type": "Property",
         "value": "chrome",
-        "observedAt": "2025-10-02T09:26:35Z"
+        "observedAt": "2026-01-15T09:26:35Z"
     },
     "magic-number":
     {
       "type": "Property",
       "value": "P5gADFDLM",
-      "observedAt": "2025-10-02T09:26:35Z"
+      "observedAt": "2026-01-15T09:26:35Z"
     }
 }
 ```
@@ -126,7 +148,19 @@ You can utilize  [addDataOrionViaKong.sh](https://github.com/european-dynamics-r
 
 #### 3.2.3 Reading historical data from the CIRCULOOS data platform
 
-Each component needs to read the historical (Mintaka) data from the platform. The id that you need to request is: ```urn:ngsi-ld:COMPONENT:writing-integration-test-1```. Save the response in a file called ```historical-data.json```
+**⚠️ WARNING: Replace YOUR_SHORTNAME with your actual component ShortName (MPMS, RAMP, SCDT, SCOPT, GRETA, or CVTOOL).**
+
+Each component needs to read the historical (Mintaka) data from the platform. 
+
+**The ID pattern you need to use:**
+```urn:ngsi-ld:YOUR_SHORTNAME:writing-integration-test-1```
+
+**Examples:**
+- MPMS: `urn:ngsi-ld:MPMS:writing-integration-test-1`
+- RAMP: `urn:ngsi-ld:RAMP:writing-integration-test-1`
+- etc.
+
+Save the response in a file called ```historical-data.json```
 
 Create a file named writing.json with the data to be sent to the data platform and place it on your corresponding folder under verification-phase-1 folder. Next generate a pull request from both reading.json, writing.json and historical-data.json files.Please use your ShortName as the name of your branch. An tutorial from the internet to create a [pull request](https://opensource.com/article/19/7/create-pull-request-github).
 
@@ -134,16 +168,36 @@ See also under the folder verification-phase-1/example for an example.
 
 #### 3.2.4 Postman
 
-Also there is a [Postman collection](./verification-phase-1/example/ED%20CIRCULOOS%20Platform%20Integration%20Testing.postman_collection.json). See the variables to change the PARTNER_USERNAME and PARTNER_PASSWORD
+Also there is a [Postman collection](./verification-phase-1/example/ED%20CIRCULOOS%20Platform%20Integration%20Testing.postman_collection.json). See the variables to change the **PARTNER_USERNAME** and **PARTNER_PASSWORD**
+
+![](./artifacts/circuloos-change-postman-username-password.png)
 
 ## 3.3 Open calls
 
-All the open calls will need to be able to read/write (GET/PUSH) to the data platform. You will need to change the COMPONENT part of the ID with with your PARTNER_USERNAME. Check [3.2](#32-integration-phase-1-with-circuloos-data-platform), [3.2.1](#321-reading-from-the-circuloos-data-platform), [3.2.2](#322-providing-data-to-the-circuloos-data-platform) and [3.2.4](#324-postman)
+**⚠️ CRITICAL FOR OPEN CALLS: You MUST use YOUR actual PARTNER_USERNAME, NOT the example "circuloos-european_dynamics"!**
 
-So if your PARTNER_USERNAME is circuloos-european_dynamics, the ID that you need to read is:  
+All the open calls will need to be able to read/write (GET/PUSH) to the data platform. 
+
+**IMPORTANT:** Replace `YOUR_PARTNER_USERNAME` in the ID patterns below with your actual PARTNER_USERNAME provided to you.
+
+**ID patterns to use:**
+- Reading: `urn:ngsi-ld:YOUR_PARTNER_USERNAME:reading-integration-test-1`
+- Writing: `urn:ngsi-ld:YOUR_PARTNER_USERNAME:writing-integration-test-1`
+
+**Example ONLY (DO NOT copy this exact ID):**  
+If your PARTNER_USERNAME is `circuloos-european_dynamics`, then your reading ID would be:  
 ```urn:ngsi-ld:circuloos-european_dynamics:reading-integration-test-1```
 
-You will not need to upload anything to the GitHub (so **DO NOT** create a PULL request), but you will need to include relevant screenshot to your specific deliverable. Please remember to remove/hide your PARTNER_PASSWORD from any screenshot.
+**Another example:**  
+If your PARTNER_USERNAME is `circuloos-my_organization`, then your reading ID would be:  
+```urn:ngsi-ld:circuloos-my_organization:reading-integration-test-1```
+
+Check [3.2](#32-integration-phase-1-with-circuloos-data-platform), [3.2.1](#321-reading-from-the-circuloos-data-platform), [3.2.2](#322-providing-data-to-the-circuloos-data-platform) and [3.2.4](#324-postman) for detailed instructions.
+
+**Deliverables:**
+- You will **NOT** need to upload anything to GitHub (so **DO NOT** create a PULL request)
+- You **MUST** include relevant screenshots in your specific deliverable
+- **Remember to remove/hide your PARTNER_PASSWORD from any screenshot** for security
 
 
 ## 4. Issue Tracking and Resolution
