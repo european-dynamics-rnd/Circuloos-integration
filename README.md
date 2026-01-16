@@ -119,21 +119,6 @@ Save the json-ld that you will provide to the platform as ```writing.json```.
 {
     "id": "urn:ngsi-ld:MPMS:writing-integration-test-1",
     "type": "integration",
-    "leather_type": {
-        "type": "Property",
-        "value": "animal",
-        "observedAt": "2026-01-15T09:26:35Z"
-    },
-    "kind_of_animal": {
-        "type": "Property",
-        "value": "pig",
-        "observedAt": "2026-01-15T09:26:35Z"
-    },
-    "leather_type_tanned": {
-        "type": "Property",
-        "value": "chrome",
-        "observedAt": "2026-01-15T09:26:35Z"
-    },
     "magic-number":
     {
       "type": "Property",
