@@ -1,1 +1,13 @@
-
+{
+    "@context": [
+        "http://circuloos-ld-context/circuloos-context.jsonld",
+        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context-v1.8.jsonld"
+    ],
+    "id": "urn:ngsi-ld:CVTOOL:reading-integration-test-1",
+    "type": "integration",
+    "magic-number": {
+        "type": "Property",
+        "value": "P5D1K9S3LM",
+        "observedAt": "2025-12-01T09:00:00.000Z"
+    }
+}
