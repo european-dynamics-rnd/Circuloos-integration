@@ -1,0 +1,52 @@
+{
+    "id": "urn:ngsi-ld:CVTOOL:writing-integration-test-1",
+    "type": "integration",
+    "magic-number": [
+        {
+            "type": "Property",
+            "value": "P5D1K9S3LM",
+            "observedAt": "2026-03-13T14:00:00Z",
+            "instanceId": "urn:ngsi-ld:attribute:instance:a48a406e-1ef2-11f1-8509-0242ac1e000b"
+        },
+        {
+            "type": "Property",
+            "value": "P5D1K9S3LM",
+            "observedAt": "2026-03-13T14:00:00Z",
+            "instanceId": "urn:ngsi-ld:attribute:instance:4e92ad8e-1f9e-11f1-a9f8-0242ac1e000b"
+        },
+        {
+            "type": "Property",
+            "value": "P5D1K9S3LM",
+            "observedAt": "2026-03-13T14:00:00Z",
+            "instanceId": "urn:ngsi-ld:attribute:instance:c65b09bc-1ef2-11f1-8509-0242ac1e000b"
+        },
+        {
+            "type": "Property",
+            "value": "P5D1K9S3LM",
+            "observedAt": "2026-03-13T15:00:00Z",
+            "instanceId": "urn:ngsi-ld:attribute:instance:e67ad7ea-1ef2-11f1-8509-0242ac1e000b"
+        },
+        {
+            "type": "Property",
+            "value": "P5D1K9S3LM",
+            "observedAt": "2026-03-13T15:00:00Z",
+            "instanceId": "urn:ngsi-ld:attribute:instance:d14e2692-1ef2-11f1-8509-0242ac1e000b"
+        },
+        {
+            "type": "Property",
+            "value": "P5D1K9S3KM",
+            "observedAt": "2026-03-14T14:05:00Z",
+            "instanceId": "urn:ngsi-ld:attribute:instance:6dda5dfe-1f9e-11f1-a9f8-0242ac1e000b"
+        },
+        {
+            "type": "Property",
+            "value": "P5D1K9S3LM",
+            "observedAt": "2026-03-14T14:07:00Z",
+            "instanceId": "urn:ngsi-ld:attribute:instance:64e1e668-1f9e-11f1-a9f8-0242ac1e000b"
+        }
+    ],
+    "@context": [
+        "http://circuloos-ld-context/circuloos-context.jsonld",
+        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
+    ]
+}

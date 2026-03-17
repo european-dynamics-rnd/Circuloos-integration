@@ -1,0 +1,11 @@
+[
+  {
+    "id": "urn:ngsi-ld:CVTOOL:writing-integration-test-1",
+    "type": "integration",
+    "magic-number": {
+        "type": "Property",
+        "value": "P5D1K9S3KM",
+        "observedAt": "2026-03-14T14:05:00.000Z"
+    }
+  }
+]
